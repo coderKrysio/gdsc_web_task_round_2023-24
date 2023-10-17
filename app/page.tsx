@@ -1,3 +1,4 @@
+import { Cards } from "@/components/cards";
 import { Navbar } from "@/components/navbar";
 import {
   Bookmark,
@@ -11,7 +12,7 @@ import {
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center bg-slate-100 text-black p-24">
+    <main className="flex min-h-screen flex-col items-center bg-slate-100 text-black p-24 pb-8">
       <Navbar />
 
       <div className="flex flex-col items-center mb-[50px]">
@@ -54,7 +55,9 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="flex items-center justify-between w-full my-[40px]">
+      <Cards />
+
+      <div className="flex items-center justify-between w-full mt-[40px]">
         <div>
           <p className="underline font-medium text-lg">
             Discover All <br />
